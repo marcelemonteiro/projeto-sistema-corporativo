@@ -1,0 +1,35 @@
+.date-author {
+    display: block;
+    text-align: right;
+    padding: .3rem .5rem;
+    background-color: #ddd;
+    font-style: italic;
+    border-radius: .5rem;
+}
+
+.return-link {
+    display: table;
+    margin: 2rem auto 1rem auto;
+    background: linear-gradient(rgb(144, 182, 214), rgb(20, 83, 134));
+    color: #fff;
+    padding: .5rem 3rem;
+    border-radius: 1rem;
+}
+
+.return-link a {
+    color: #fff;
+}
+
+.return-link:hover {
+    background: #831276;
+}
+
+.author {
+    text-align: center;
+}
+
+.author img {
+    width: auto;
+    max-width: 100%;
+    border-radius: 50%;
+}
