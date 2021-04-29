@@ -64,10 +64,7 @@ CREATE TABLE articles (
     FOREIGN KEY (art_author) REFERENCES authors (aut_id)
 );
 
-SELECT art_id, art_image, art_title, art_text
-FROM articles
-WHERE art_status = 'ativo'
-ORDER BY art_date DESC;
+
 
 -- Insere artigos
 INSERT INTO articles (
@@ -82,15 +79,15 @@ INSERT INTO articles (
     '2021-03-10 10:10:00',
     'https://picsum.photos/300',
     'Primeiro artigo',
-    'Este é nosso primeiro artigo sobre fuinhas, furões e afins.',
+    'Vamos falar de alimentação saúdavel!',
     '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae molestias, itaque inventore eius consequatur possimus delectus recusandae quaerat ratione doloribus corporis. At, repellat accusantium. Iusto quidem quis voluptatibus provident dolor?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsum quasi cupiditate neque, voluptas voluptate nam nostrum facilis aspernatur esse saepe expedita cumque animi consequatur ab odio? Ipsum, omnis ducimus.</p><img class="flush" src="https://picsum.photos/400/200" alt="imagem aleatória"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates incidunt officia id doloribus dicta saepe atque ab ullam nisi inventore quas libero, rem a eveniet assumenda ex quibusdam illo maiores?</p><h4>Lista de links:</h4><ul><li><a href="http://luferat.net/">Site do fessô</a></li><li><a href="http://github.com/luferat">GitHub do fessô</a></li></ul><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, exercitationem commodi!</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, iusto eveniet? Harum nulla neque iusto, cumque similique voluptate doloremque quos totam repellendus omnis, assumenda a aperiam molestiae, beatae blanditiis quod.</p>',
     '2'
 ),
 (
     '2021-03-13 10:10:00',
     'https://picsum.photos/301',
-    'Porque as fuinhas gritam',
-    'Sabe quando sua funha dá aquele "gritinho"?',
+    'Tudo que você precisar saber sobre musculação',
+    'Inicie a sua jornada já',
     '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae molestias, itaque inventore eius consequatur possimus delectus recusandae quaerat ratione doloribus corporis. At, repellat accusantium. Iusto quidem quis voluptatibus provident dolor?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsum quasi cupiditate neque, voluptas voluptate nam nostrum facilis aspernatur esse saepe expedita cumque animi consequatur ab odio? Ipsum, omnis ducimus.</p><img class="flush" src="https://picsum.photos/400/200" alt="imagem aleatória"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates incidunt officia id doloribus dicta saepe atque ab ullam nisi inventore quas libero, rem a eveniet assumenda ex quibusdam illo maiores?</p><h4>Lista de links:</h4><ul><li><a href="http://luferat.net/">Site do fessô</a></li><li><a href="http://github.com/luferat">GitHub do fessô</a></li></ul><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, exercitationem commodi!</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, iusto eveniet? Harum nulla neque iusto, cumque similique voluptate doloremque quos totam repellendus omnis, assumenda a aperiam molestiae, beatae blanditiis quod.</p>',
     '1'
 );
@@ -106,16 +103,16 @@ INSERT INTO articles (
 (
     '2021-03-13 11:42:00',
     'https://picsum.photos/302',
-    'Fuinhas comem o que?',
-    'Como alimetar seu pet de forma correta e saudável.',
+    'Comidinhas fitness',
+    'Bom demais',
     '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae molestias, itaque inventore eius consequatur possimus delectus recusandae quaerat ratione doloribus corporis. At, repellat accusantium. Iusto quidem quis voluptatibus provident dolor?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsum quasi cupiditate neque, voluptas voluptate nam nostrum facilis aspernatur esse saepe expedita cumque animi consequatur ab odio? Ipsum, omnis ducimus.</p><img class="flush" src="https://picsum.photos/400/200" alt="imagem aleatória"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates incidunt officia id doloribus dicta saepe atque ab ullam nisi inventore quas libero, rem a eveniet assumenda ex quibusdam illo maiores?</p><h4>Lista de links:</h4><ul><li><a href="http://luferat.net/">Site do fessô</a></li><li><a href="http://github.com/luferat">GitHub do fessô</a></li></ul><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, exercitationem commodi!</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, iusto eveniet? Harum nulla neque iusto, cumque similique voluptate doloremque quos totam repellendus omnis, assumenda a aperiam molestiae, beatae blanditiis quod.</p>',
     '3'
 ),
 (
     '2021-03-14 10:10:00',
     'https://picsum.photos/303',
-    'Fuinhas e outos pets juntos',
-    'Seu cachorro e sua funha podem se melhores amigos.',
+    'Tudo sobre corrida',
+    'Conhece amanhã',
     '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae molestias, itaque inventore eius consequatur possimus delectus recusandae quaerat ratione doloribus corporis. At, repellat accusantium. Iusto quidem quis voluptatibus provident dolor?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsum quasi cupiditate neque, voluptas voluptate nam nostrum facilis aspernatur esse saepe expedita cumque animi consequatur ab odio? Ipsum, omnis ducimus.</p><img class="flush" src="https://picsum.photos/400/200" alt="imagem aleatória"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates incidunt officia id doloribus dicta saepe atque ab ullam nisi inventore quas libero, rem a eveniet assumenda ex quibusdam illo maiores?</p><h4>Lista de links:</h4><ul><li><a href="http://luferat.net/">Site do fessô</a></li><li><a href="http://github.com/luferat">GitHub do fessô</a></li></ul><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, exercitationem commodi!</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, iusto eveniet? Harum nulla neque iusto, cumque similique voluptate doloremque quos totam repellendus omnis, assumenda a aperiam molestiae, beatae blanditiis quod.</p>',
     '2'
 );
@@ -130,6 +127,8 @@ CREATE TABLE contacts (
     message LONGTEXT NOT NULL,
     status ENUM('recebida', 'lida', 'respondida', 'apagada') DEFAULT 'recebida'
 );
+
+select * from contacts;
 
 -- Cria tabela para configurações do site
 CREATE TABLE config (
